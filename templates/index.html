@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Checker</title>
+</head>
+<body>
+    <h1>Prime Number Checker</h1>
+    <form method="POST">
+        <label for="number">Enter a number:</label>
+        <input type="text" name="number" id="number" required autocomplete="off">
+        <button type="submit">Check</button>
+    </form>
+        {% if result is not none %}
+        <h4>Result: {{ result }}</h4>
+        {% endif %}
+</body>
+</html>
